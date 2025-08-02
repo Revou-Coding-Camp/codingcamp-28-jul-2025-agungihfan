@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+}
+
+.header {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin-left: 1.5rem;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #ffc107;
+}
+
+.content {
+    padding: 2rem;
+}
+
+section {
+    display: none;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section.active {
+    display: block;
+}
+
+#message-us {
+    display: none; /* Awalnya disembunyikan oleh JavaScript */
+}
+
+.form-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#message-form, .output-container {
+    flex: 1;
+    min-width: 300px;
+}
+
+#message-form label,
+#message-form input,
+#message-form select,
+#message-form textarea,
+#message-form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#message-form input,
+#message-form select,
+#message-form textarea {
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+}
+
+#message-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#message-form button:hover {
+    background-color: #0056b3;
+}
+
+.output-container {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-left: 4px solid #007bff;
+    border-radius: 5px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo-container">
+            <img src="https://via.placeholder.com/100" alt="Logo" class="logo">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="content">
+        <section id="home" class="active">
+            <h1>Selamat Datang di Halaman Utama</h1>
+            <p>Ini adalah halaman beranda web.</p>
+        </section>
+
+        <section id="profile">
+            <h1>Profil</h1>
+            <p>Bagian ini untuk menampilkan informasi profil.</p>
+        </section>
+
+        <section id="portfolio">
+            <h1>Portofolio</h1>
+            <p>Bagian ini untuk menampilkan karya-karya Anda.</p>
+        </section>
+
+        <section id="message-us">
+            <div class="form-container">
+                <form id="message-form">
+                    <h2>Kirim Pesan</h2>
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
+                    
+                    <label for="tanggal-lahir">Tanggal Lahir:</label>
+                    <input type="date" id="tanggal-lahir" name="tanggal-lahir" required>
+                    
+                    <label for="jenis-kelamin">Jenis Kelamin:</label>
+                    <select id="jenis-kelamin" name="jenis-kelamin" required>
+                        <option value="">Pilih</option>
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                    
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" name="pesan" rows="4" required></textarea>
+                    
+                    <button type="submit">Kirim</button>
+                </form>
+                
+                <div class="output-container" id="output-container">
+                    <h3>Detail Pesan Anda:</h3>
+                    <pre id="output-content"></pre>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
